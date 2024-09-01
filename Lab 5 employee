@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class Employee
+{
+    Scanner sc= new Scanner(System.in);
+    String name; String city; double sal; double da; double hr; double total;
+    void getData()
+    {
+        System.out.println("enter the name");
+        name= sc.nextLine();
+        System.out.println("enter the city");
+        city= sc.nextLine();
+        System.out.println("enter the sal");
+        sal= sc.nextDouble();
+        System.out.println("enter the da");
+        da= sc.nextDouble();
+        System.out.println("enter the hra");
+        hr= sc.nextDouble();
+
+    }
+    void calculate()
+    {
+        total=sal+sal*da/100+sal*hr/100;
+    }
+    void display()
+    {
+        System.out.println("total="+total);
+    }
+
+}
+
+class emp{
+    public static void main(String args[])
+    {
+        Employee ob1= new Employee();
+        ob1.getData();
+        ob1.calculate();
+        ob1.display();
+        
+
+    }
+}
