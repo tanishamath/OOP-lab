@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class calculator
+{public static void main (String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		float a,b,c;
+		char yn;
+		int choice;
+		System.out.println("enter the first no.");
+		a=sc.nextFloat();
+		System.out.println("enter the second no.");
+		b=sc.nextFloat();
+		
+		do{
+			System.out.println("chose for operator 1->+;2->-;3->*;4->/");
+			choice=sc.nextInt();
+			
+			switch(choice)
+			{
+				case 1:
+				c=a+b;
+				System.out.println("Ans="+c);
+				
+				break;
+				
+				case 2:
+				c=a-b;
+				System.out.println("Ans="+c);
+				break;
+				
+				case 3:
+				c=a*b;
+				System.out.println("Ans="+c);
+				break;
+				
+				case 4:
+				c=a/b;
+				System.out.println("Ans="+c);
+				break;
+			}
+			System.out.println("do you wish to calculate again? y-yes;n-no;");
+			yn=sc.next().charAt(0);
+		
+		}while(yn=='y');
+	}
+}
+		
+				
+				
+		
