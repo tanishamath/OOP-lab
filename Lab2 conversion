@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class conversion
+{
+	  public static void main (String args[])
+	  {
+		  Scanner sc=new Scanner(System.in);
+		  int num,ctoi,dtoi;
+		  double doub;
+		  char ch;
+		  byte itob,dtob;
+		  System.out.println("enter an integer");
+		  num=sc.nextInt();
+		  System.out.println("enter double ");
+		  doub=sc.nextDouble();
+		  System.out.println("enter a character");
+		  ch=sc.next().charAt(0);
+		  itob=(byte)num;
+		  System.out.println("integer to byte-"+itob);
+		  ctoi=(int)ch;
+		  System.out.println("character to integer-"+ctoi);
+		  dtoi=(int)doub;
+		  System.out.println("double to integer-"+dtoi);
+		  dtob=(byte)doub;
+		  System.out.println("double to byte-"+dtob);
+		  
+		  
+	  }
+}
