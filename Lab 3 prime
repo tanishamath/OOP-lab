@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class prime
+{
+	public static void main (String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int i,j,n,m,p;
+		System.out.println("enter the first no.");
+		m=sc.nextInt();
+		System.out.println("enter the second no.");
+		n=sc.nextInt();
+		for(i=m;i<=n;i++)
+		{
+			p=0;
+			for(j=2;j<=i/2;j++)
+			{
+				if(i%j==0)
+					++p;
+			}
+			if(p==0)
+			{
+				System.out.print(i+" ");
+			}
+		}
+	}
+}
