@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.*;
+class pattern
+{
+	public static void main (String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		int i,j,num;
+		int a[]=new int[10];
+		System.out.println("enter the no. till which u want pattern");
+		num=sc.nextInt();
+		for(i=1;i<=num;i++)
+		{
+			for(j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			System.out.println();
+		}
+				
+			
+	}
+}
+		
