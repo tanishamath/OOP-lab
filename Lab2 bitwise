@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class bitwise
+{
+	  public static void main (String args[])
+	  {
+		  Scanner sc=new Scanner(System.in);
+		  int num,div,mult;
+		  System.out.println("enter an integer");
+		  num=sc.nextInt();
+		  div=num<<1;
+		  mult=num>>1;
+		  System.out.println(num+" multiplied by 2 is ="+div);
+		  System.out.println(num+" divided by 2 is="+mult);
+	  }
+}
+		  
