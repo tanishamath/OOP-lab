@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Array
+{
+	public static void main (String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int a[]=new int [10];
+		int flag=0,i;
+		System.out.println("enter the 10 no.s");
+		for(i=0;i<10;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("negative no.s are=");
+		for(i=0;i<10;i++)
+			
+		{
+			if(a[i]<0)
+			{
+				System.out.println(+a[i]);
+			}
+			
+		}
+		System.out.println("positive no.s are=");
+		for(i=0;i<10;i++)
+		{
+			if(a[i]>0)
+			{
+				System.out.println(+a[i]);
+			}
+			
+		}
+		System.out.println("0s are=");
+		for(i=0;i<10;i++)
+		{
+			if(a[i]==0)
+			{
+				System.out.println(+a[i]);
+			}
+			
+		}
+	}
+}
+
+
+
+
+
+
+			
+			
+				
+			
